@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "blog",
+  "info": {
+    "name": "Blog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "localia": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
