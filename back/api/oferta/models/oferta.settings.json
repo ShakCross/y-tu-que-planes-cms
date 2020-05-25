@@ -1,0 +1,39 @@
+{
+  "info": {
+    "name": "Oferta"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "precio": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "antes": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "alt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "ofertas"
+}

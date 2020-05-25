@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "festividads",
+  "info": {
+    "name": "Festividad"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Dia": {
+      "type": "integer"
+    },
+    "Mes": {
+      "type": "string"
+    },
+    "Provincia": {
+      "type": "string"
+    },
+    "Titulo": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    }
+  }
+}
