@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "noticias",
+  "info": {
+    "name": "Noticia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "provincia": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "alt": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
